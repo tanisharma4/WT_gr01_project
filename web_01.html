@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>Web Technology</title>
+</head>
+<body>
+    <div class="container">
+        <div class="topics">
+            <h2>Topics</h2>
+            <ul>
+                <li><a href="#" onclick="showDescription('HTML BASICS')">HTML BASICS</a></li>
+                <li><a href="#" onclick="showDescription('TAGS')">TAGS</a></li>
+                <li><a href="#" onclick="showDescription('LINKS')">LINKS</a></li>
+                <li><a href="#" onclick="showDescription('TABLES')">TABLES</a></li>
+                <li><a href="#" onclick="showDescription('LIST')">LIST</a></li>
+
+            </ul>
+        </div>
+        <div class="description">
+            <h2>Description</h2>
+            <div id="HTML BASICS" style="display: none;">
+                HTML BASICS:
+               <br> HTML (HyperText Markup Language) serves as the foundation of web development, enabling the creation and structuring of content on web pages. It employs a tag-based system to define elements within documents. HTML provides the essential structure for web content, delineating paragraphs, headings, images, and more. It's a cornerstone language, focusing on content semantics, allowing browsers to interpret and display information accurately. HTML forms the backbone of the web, facilitating accessibility, SEO optimization, and compatibility across various devices, laying the groundwork for styling with CSS and interactivity through JavaScript in modern web development.
+               </br>
+            </div>
+            <div id="TAGS" style="display: none;">
+                TAGS:
+                <br>HTML tags are fundamental markers defining elements within a web document. Comprising opening (tag) and closing (/tag) pairs, they encapsulate content, giving context and structure to web pages. Tags like (p tag (paragraphs tags)) denote paragraphs, (h1 tag) to (h6 tag) signify headings, while (img tag) embeds images. Each tag has a specific purpose, organizing and styling content for browsers to interpret and display correctly. Tags serve as building blocks, facilitating the arrangement of text, multimedia, and interactive elements. Their semantic role in HTML allows for clear communication between developers and browsers, forming the basis for effective web page creation and design.
+                </br>
+            </div>
+            <div id="LINKS" style="display: none;">
+                LINKS:
+
+                <br>Links in HTML, represented by the (a) tag, enable seamless navigation between web pages or resources. They connect content to external URLs or internal locations within a website, fostering interactivity and information traversal for users. Links empower websites by creating pathways, directing users to related content, references, or actions. With attributes like href, links facilitate accessibility, enhancing user experience and site connectivity. These clickable anchors serve as connectors, allowing effortless movement across the web, promoting engagement and facilitating the interconnected nature of information on the internet.
+                </br>
+            </div>
+            <div id="TABLES" style="display: none;">
+                TABLES: 
+                <br> HTML tables, structured by (table tag),(tr tag), (td tag), and (th tag) tags, organize data into rows and columns. They provide a grid-based layout, facilitating the presentation of structured information on web pages. (tr tag) defines rows, (td tag)signifies data cells, and (th tag) represents headers. Tables offer a structured format for displaying tabular data, such as schedules, statistics, or comparisons. They enable clear organization, aiding comprehension and visual hierarchy. Tables in HTML play a pivotal role in data presentation, offering a systematic arrangement that enhances readability and understanding of content for website visitors.
+                </br>
+            </div>
+            <div id="LIST" style="display: none;">
+                LIST: 
+                <br>HTML lists, encompassing (ul), (ol), and (li) tags, structure content in ordered or unordered formats. (ul) represents unordered lists, presenting items in a bullet-point style, ideal for non-sequential content. (ol) denotes ordered lists, displaying items with numbering for sequential or hierarchical data. Both lists employ (li) for individual items. Lists aid in organizing and presenting information systematically, enhancing readability and comprehension on web pages. They offer flexibility in content arrangement, enabling effective categorization, outlining, and structuring of data, making information more accessible and digestible for users browsing websites.
+                </br>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showDescription(id) {
+            // Hide all descriptions
+            const descriptions = document.querySelectorAll('.description div');
+            descriptions.forEach(description => {
+                description.style.display = 'none';
+            });
+
+            // Show the selected description
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
